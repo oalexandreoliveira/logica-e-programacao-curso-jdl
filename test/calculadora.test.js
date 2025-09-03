@@ -13,4 +13,14 @@ describe('Testes da Função de Soma', function() {
         const resultadoDaSoma = somarDoisNumeros (-3, 8);
         expect(resultadoDaSoma).to.equal(5)
     });
+
+    it('A função deve ser capaz de somar dois números zerados', function(){
+        const resultadoDaSoma = somarDoisNumeros(0, 0);
+        expect(resultadoDaSoma).to.equal(0)
+    });
+
+    it('A função deve ser capaz de somar dois números negativos', function(){
+        const resultadoDaSoma = somarDoisNumeros (-10, -20);
+        expect(resultadoDaSoma).to.equal(-30)
+    });
 });
